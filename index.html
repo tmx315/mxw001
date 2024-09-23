@@ -19,6 +19,58 @@
             height: 100vh;
         }
     </style>
+    <script>
+        // 使用DOMContentLoaded事件
+        let userChoice = confirm("发现新版本孟轩网1.0.8是否立即更新？");
+        if (userChoice) {
+            // 用户点击确定，立即跳转
+            window.location.href = "https://tmx315.lanzouk.com/b00uyfb24d"; // 这里替换成你想要跳转的网址
+        } else {
+          
+        
+    }, 300000); // 5分钟 = 300000毫秒
+}
+        });
+    </script>
+    
+    <script>
+// 设置定时器
+let initialTimer = null;
+let autoRedirectTimer = null;
+
+function resetInitialTimer() {
+    // 清除现有的初始定时器
+    if (initialTimer) {
+        clearTimeout(initialTimer);
+    }
+    // 重新设置5分钟后的初始定时器
+    initialTimer = setTimeout(function() {
+        // 弹出对话框
+        let userChoice = confirm("我们建议您更新至孟轩网1.0.8，是否立即更新？");
+        if (userChoice) {
+            // 用户点击确定，立即跳转
+            window.location.href = "https://tmx315.lanzouk.com/b00uyfb24d"; // 这里替换成你想要跳转的网址
+        } else {
+            
+    }, 300000); // 5分钟 = 300000毫秒
+}
+
+window.onload = function() {
+    // 立即开始5分钟计时
+    resetInitialTimer();
+};
+
+// 清除自动跳转定时器
+window.onbeforeunload = function() {
+    if (autoRedirectTimer) {
+        clearTimeout(autoRedirectTimer);
+    }
+    if (initialTimer) {
+        clearTimeout(initialTimer);
+    }
+};
+</script>
+    
  <script>
 // 设置定时器
 let initialTimer = null;
